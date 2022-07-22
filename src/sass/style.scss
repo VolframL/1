@@ -7,15 +7,16 @@
   margin: 0 auto;
 }
 
-@import 'blocks/promo.scss';
-@import 'blocks/header.scss';
-@import 'blocks/buttons.scss';
-@import 'blocks/advantages.scss';
-@import 'media.scss';
-@import 'blocks/consultation.scss';
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/advantages';
+@import 'media';
+@import 'blocks/consultation';
+@import 'blocks/forms';
 
 
 .lll {
   min-height: 500px;
-  background-color: aqua;
+  background-color: lightgrey;
 }

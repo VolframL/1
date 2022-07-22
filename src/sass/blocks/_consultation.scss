@@ -1,4 +1,17 @@
 .consultation {
   min-height: 680px;
   background: url('../images/bg/consultation-bg.png') center (center/cover) no-repeat;
+  padding: 100px 0 108px 0;
+  &__header {
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  &__subheader {
+    padding-top: 8px;
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+  }
 }

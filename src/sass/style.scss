@@ -8,4 +8,12 @@
 }
 
 @import 'blocks/promo.scss';
-@import 'blocks/header.scss'
+@import 'blocks/header.scss';
+@import 'blocks/buttons';
+@import 'blocks/advantages';
+
+
+.lll {
+  min-height: 500px;
+  background-color: aqua;
+}

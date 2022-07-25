@@ -1,15 +1,19 @@
 .carousel {
+  position: relative;
   padding: 150px 0;
   &__inner {
     position: relative;
     width: 750px;
     margin: 0 auto;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
   }
-  .slick-prev {
+  .prev {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: -104px;
     border: none;
     background-color: #fff;
     img{
@@ -17,12 +21,12 @@
       height: 50px;
     }
   }
-  .slick-next {
+  .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: -104px;
     border: none;
+    right: 485px;
     background-color: #fff;
     img{
       width: 31px;

@@ -1,3 +1,17 @@
+@media (max-width: 1100px) {
+  .consultation {
+    &__header {
+      padding-left: 30px;
+    }
+    &__subheader {
+      padding-left: 30px;
+    }
+    & form {
+      padding-left: 30px;
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .promo {
     min-height: 420px;
@@ -27,6 +41,40 @@
     min-height: 387px;
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+  .catalog {
+    &__tab {
+      width: 200px;
+    }
+    &__content {
+      width: 700px;
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+    .catalog-item {
+      margin-right: 0px;
+    }
+    .catalog-item:nth-child(odd) {
+      margin-right: 70px;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+
+  .carousel {
+    &__inner {
+      img {
+        width: 87%;
+      }
+    }
+    .next {
+      display: none;
+    }
+    .prev {
+      display: none;
+    }
   }
 }
 
@@ -129,8 +177,8 @@
     }
     .button_main {
       margin-top: 50px;
-      width: 70vw;
-      height: 50px;
+      width: 200px;
+      height: 70px;
       font-size: 20px;
     }
     &__link {
@@ -173,6 +221,80 @@
     }
     &__icon-wrapper {
       padding: 0;
+    }
+  }
+  .catalog {
+    &__tab {
+      width: 120px;
+      font-size: 12px;
+    }
+    &__content {
+      width: 350px;
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+    .catalog-item {
+      margin: 0 20px;
+    }
+    .catalog-item:nth-child(odd) {
+      margin: 0 20px;
+    }
+    
+  }
+  .consultation {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__header {
+      font-size: 30px;
+    }
+    &__subheader {
+      font-size: 18px;
+    }
+    & form {
+      width: 290px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .promo {
+    &__header {
+      font-size: 21px;
+    }
+  }
+  .carousel {
+    padding: 30px 0;
+  }
+  .catalog {
+    &__tab {
+      font-size: 10px;
+      height: 30px;
+      width: 87px;
+      line-height: 29px;
+    }
+    &__content {
+      width: 320px;
+    }
+    .catalog-item:nth-child(odd) {
+      margin: 0 10px;
+    }
+    .catalog-item {
+      margin: 0 10px;
+      
+    }
+  }
+
+  .consultation {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &__header {
+      font-size: 20px;
+    }
+    &__subheader {
+      font-size: 14px;
+    }
+    & form {
+      width: 270px;
     }
   }
 }

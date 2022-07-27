@@ -1,6 +1,7 @@
 @import 'base/variables';
 * {
   font-family: 'Museo Sans Cyrl', sans-serif;
+  // font-family: 'Museo Moderno', sans-serif;
 }
 .container {
   max-width: 950px;
@@ -11,13 +12,10 @@
 @import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/advantages';
-@import 'media';
 @import 'blocks/consultation';
 @import 'blocks/forms';
 @import 'blocks/carousel';
 @import 'blocks/catalog';
-
-.lll {
-  min-height: 500px;
-  background-color: lightgrey;
-}
+@import 'blocks/feedback';
+@import 'blocks/footer';
+@import 'media';

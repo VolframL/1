@@ -46,19 +46,26 @@
   &__content {
     display: none;
     margin-top: 55px;
-    justify-content: space-between;
     flex-wrap: wrap;
     &_active {
-      display: flex;
+      display: block;
     }
   }
   &-item {
+    display: inline-block;
+    margin-right: 20px;
     width: 300px;
     min-height: 440px;
     border: 2px solid #e8e8e8;
     padding: 20px;
     overflow: hidden;
     margin-bottom: 20px;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    & span {
+      font-family: 'Museo Moderno';
+    }
     &__img {
       display: block;
       margin: 0 auto;

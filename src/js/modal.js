@@ -17,7 +17,6 @@ consultBtn.forEach(item => {
   });
 });
 
-
 orderBtn.forEach(function(item, index) {
   item.addEventListener('click', function() {
     overlay.toggle('show');

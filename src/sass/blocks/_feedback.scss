@@ -18,7 +18,7 @@
   }
   &__item {
     display: flex;
-    height: 220px;
+    min-height: 220px;
   }
   &__descr {
     // width: 680px;
@@ -28,9 +28,9 @@
   }
   &__img {
       width: 170px;
-      & img {
-        // width: 100%;
-      }
+      // & img {
+      //   // width: 100%;
+      // }
   }
   &__name {
     font-weight: 700;

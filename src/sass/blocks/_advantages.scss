@@ -25,6 +25,12 @@
     flex-direction: column;
     align-items: center;
     width: 275px;
+    &:hover img {
+      animation-timing-function: ease-in-out;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-name: heartbeat;
+    }
   }
   &__icon {
     font-weight: 700;

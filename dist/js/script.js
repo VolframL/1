@@ -22,3 +22,4 @@ window.addEventListener('scroll', function(e) {
   } else document.querySelector('.pageup').classList.remove('visible');
 });
 
+new WOW().init();

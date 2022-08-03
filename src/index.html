@@ -5,15 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulse</title>
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/font.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
-    <!-- <link rel="stylesheet" href="css/slick.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -25,7 +20,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+380976594131" class="header__phone">+38 (067) 659-41-31</a>
-                    <button class="button">заказать звонок</button>
+                    <button data-modal="consultation" class="button">заказать звонок</button>
                 </div>
             </header>
             <div class="promo__wrapper">
@@ -48,7 +43,7 @@
                         на все вопросы
                     </div>
                 </div>
-                <button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
+                <button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
                 <div class="promo__link">
                     или
                     <a href="#">перейти в каталог</a>
@@ -148,7 +143,7 @@
                             <div class="catalog-item__old-price">4750 грн.</div>
                             <div class="catalog-item__price">4200 грн.</div>
                         </div>
-                        <button class="button button_mini">Купить</button>
+                        <button data-modal="order" class="button button_mini">Купить</button>
                     </div>
                 </div>
                 <div class="catalog-item">
@@ -173,7 +168,7 @@
                             <div class="catalog-item__old-price">6690 грн.</div>
                             <div class="catalog-item__price">6641 грн.</div>
                         </div>
-                        <button class="button button_mini">Купить</button>
+                        <button data-modal="order" class="button button_mini">Купить</button>
                     </div>
                 </div>
                 <div class="catalog-item">
@@ -198,7 +193,7 @@
                             <div class="catalog-item__old-price">4750 грн.</div>
                             <div class="catalog-item__price">4200 грн.</div>
                         </div>
-                        <button class="button button_mini">Купить</button>
+                        <button data-modal="order" class="button button_mini">Купить</button>
                     </div>
                 </div>
                 <div class="catalog-item">
@@ -223,7 +218,7 @@
                             <div class="catalog-item__old-price">4750 грн.</div>
                             <div class="catalog-item__price">4200 грн.</div>
                         </div>
-                        <button class="button button_mini">Купить</button>
+                        <button data-modal="order" class="button button_mini">Купить</button>
                     </div>
                 </div>
                 <div class="catalog-item">
@@ -248,7 +243,7 @@
                             <div class="catalog-item__old-price">4750 грн.</div>
                             <div class="catalog-item__price">4200 грн.</div>
                         </div>
-                        <button class="button button_mini">Купить</button>
+                        <button data-modal="order" class="button button_mini">Купить</button>
                     </div>
                 </div>
                 <div class="catalog-item">
@@ -273,7 +268,7 @@
                             <div class="catalog-item__old-price">4750 грн.</div>
                             <div class="catalog-item__price">4200 грн.</div>
                         </div>
-                        <button class="button button_mini">Купить</button>
+                        <button data-modal="order" class="button button_mini">Купить</button>
                     </div>
                 </div>
 
@@ -301,7 +296,7 @@
                             <div class="catalog-item__old-price">4750 грн.</div>
                             <div class="catalog-item__price">4200 грн.</div>
                         </div>
-                        <button class="button button_mini">Купить</button>
+                        <button data-modal="order" class="button button_mini">Купить</button>
                     </div>
                 </div>
                 <div class="catalog-item">
@@ -326,7 +321,7 @@
                             <div class="catalog-item__old-price">4750 грн.</div>
                             <div class="catalog-item__price">4200 грн.</div>
                         </div>
-                        <button class="button button_mini">Купить</button>
+                        <button data-modal="order" class="button button_mini">Купить</button>
                     </div>
                 </div>
             </div>
@@ -353,7 +348,7 @@
                             <div class="catalog-item__old-price">4750 грн.</div>
                             <div class="catalog-item__price">4200 грн.</div>
                         </div>
-                        <button class="button button_mini">Купить</button>
+                        <button data-modal="order" class="button button_mini">Купить</button>
                     </div>
                 </div>
             </div>
@@ -367,11 +362,13 @@
                     <div class="feedback__img">
                         <img src="./images/feedback/photo_1.png" alt="">
                     </div>
-                    <div class="feedback__name">Ирина Иванченко </div>
-                    <div class="feedback__quantity">2 полумарафона</div>
-                    <div class="feedback__feedback">Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности. Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же. <br> 
-                    Новые цели - новый гаджет! <br>
-                    Спасибо, RunSmart! </div>
+                    <div class="feedback__descr">
+                        <div class="feedback__name">Ирина Иванченко </div>
+                        <div class="feedback__quantity">2 полумарафона</div>
+                        <div class="feedback__feedback">Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности. Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же. <br> 
+                        Новые цели - новый гаджет! <br>
+                        Спасибо, RunSmart! </div>
+                    </div>
                 </div>
             </div>
             <div class="feedback__wrapper">
@@ -379,9 +376,11 @@
                     <div class="feedback__img">
                         <img src="./images/feedback/photo_2.png" alt="">
                     </div>
-                    <div class="feedback__name">Иван Сёмочкин </div>
-                    <div class="feedback__quantity">1 полумарафон</div>
-                    <div class="feedback__feedback">Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. <br> Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд. <br> С ними подготовился к своему первому полумарафону! Спасибо!!!</div>
+                    <div class="feedback__descr">
+                        <div class="feedback__name">Иван Сёмочкин </div>
+                        <div class="feedback__quantity">1 полумарафон</div>
+                        <div class="feedback__feedback">Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. <br> Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд. <br> С ними подготовился к своему первому полумарафону! Спасибо!!!</div>
+                    </div>
                 </div>
             </div>
             <div class="feedback__wrapper">
@@ -389,16 +388,18 @@
                     <div class="feedback__img">
                         <img src="./images/feedback/photo_3.png" alt="">
                     </div>
-                    <div class="feedback__name">Юлия Дашкина</div>
-                    <div class="feedback__quantity">2 полумарафона</div>
-                    <div class="feedback__feedback">Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и решила попробовать. <br> Позвонила, ребята поинтересовались моими целями и подобрали очень интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не намерена останавливаться! <br> Спасибо!!!</div>
+                    <div class="feedback__descr">
+                        <div class="feedback__name">Юлия Дашкина</div>
+                        <div class="feedback__quantity">2 полумарафона</div>
+                        <div class="feedback__feedback">Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и решила попробовать. <br> Позвонила, ребята поинтересовались моими целями и подобрали очень интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не намерена останавливаться! <br> Спасибо!!!</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <footer class="footer">
         <div class="footer__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20340.830829739614!2d30.668817049999998!3d50.41121999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1d5be23293%3A0x7cfaef800270a63c!2z0KLQoNCmIE5ldyBXYXk!5e0!3m2!1sru!2sua!4v1658961078611!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20340.830829739614!2d30.668817049999998!3d50.41121999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1d5be23293%3A0x7cfaef800270a63c!2z0KLQoNCmIE5ldyBXYXk!5e0!3m2!1sru!2sua!4v1658961078611!5m2!1sru!2sua" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="footer__info">
                 <address class="footer__address">Київ, вулиця Архітектора Вербицького, 1</address>
                 <a class="footer__tel" href="tel:+380976594131">+38 (067) 659-41-31</a>
@@ -415,12 +416,46 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/slick.min.js"></script> -->
+
+    <div class="overlay">
+        <div class="modal fade" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form action="#" class="feed-form feed-form_mt25"> 
+                <input name="text" type="text" class="consultation__name" placeholder="Ваше имя">
+                <input name="tel" type="number" class="consultation__tel" placeholder="Ваш телефон">
+                <input name="email" type="email" class="consultation__email" placeholder="Ваш E-mail">
+                <button data-modal="thanks" class="button  button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+        <div class="modal fade" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__descr" id="modal-descr"></div>
+            <form action="#" class="feed-form feed-form_mt25"> 
+                <input type="text" name="article" id="article" value="" hidden>
+                <input name="text" type="text" class="consultation__name" placeholder="Ваше имя">
+                <input name="tel" type="number" class="consultation__tel" placeholder="Ваш телефон">
+                <input name="email" type="email" class="consultation__email" placeholder="Ваш E-mail">
+                <button data-modal="thanks" class="button  button_submit">Купить</button>
+            </form>
+        </div>
+        <div class="modal modal_mini fade" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+        </div>
+    </div>
+    <a href="#up" class="pageup">
+        <img src="icons/up-arrow.svg" alt="up">
+    </a>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="js/tabItemContent.js"></script>
     <script src="js/tabs.js"></script>
+    <script src="js/mail.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>

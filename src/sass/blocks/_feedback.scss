@@ -1,3 +1,52 @@
 .feedback {
   min-height: 1000px;
+  &__header {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #0D0D0D;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__wrapper {
+    padding: 60px 0 50px 0;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // align-items: center;
+    // width: 920px;
+  }
+  &__item {
+    display: flex;
+    height: 220px;
+  }
+  &__descr {
+    // width: 680px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__img {
+      width: 170px;
+      & img {
+        // width: 100%;
+      }
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    color: #0D0D0D;
+  }
+  &__quantity {
+    font-weight: 500;
+    font-size: 14px;
+    color: #646464;
+  }
+  &__feedback {
+    margin-top: 10px;
+    font-weight: 300;
+    line-height: 24px;
+    font-size: 16px;
+    color: #0D0D0D;
+  }
 }
